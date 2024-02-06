@@ -1,3 +1,5 @@
+import Todo from "@/components/Todo";
+
 export default function Home() {
   return (
     <>
@@ -39,7 +41,9 @@ export default function Home() {
               </th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <Todo />
+          </tbody>
         </table>
       </div>
     </>

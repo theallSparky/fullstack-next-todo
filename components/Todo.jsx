@@ -8,11 +8,15 @@ const Todo = () => {
           scope="row"
           class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
         >
-          Apple MacBook Pro 17&quot;
+          1
         </th>
-        <td class="px-6 py-4">Silver</td>
-        <td class="px-6 py-4">Laptop</td>
-        <td class="px-6 py-4">$2999</td>
+        <td class="px-6 py-4">Study</td>
+        <td class="px-6 py-4">Learn a code concept</td>
+        <td class="px-6 py-4">Pending...</td>
+        <td class="px-6 py-4">
+          <button className="py-2 px-4 bg-red-500 text-white">Delete</button>
+          <button className="py-2 px-4 bg-red-500 text-white">Delete</button>
+        </td>
       </tr>
     </div>
   );
