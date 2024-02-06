@@ -15,7 +15,6 @@ const Todo = () => {
         <td class="px-6 py-4">Pending...</td>
         <td class="px-6 py-4">
           <button className="py-2 px-4 bg-red-500 text-white">Delete</button>
-          <button className="py-2 px-4 bg-red-500 text-white">Delete</button>
         </td>
       </tr>
     </div>
