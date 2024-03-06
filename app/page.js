@@ -9,6 +9,8 @@ export default function Home() {
     description: "",
   });
 
+  const onChangeHandler = (e) => {};
+
   return (
     <>
       <form className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto">
