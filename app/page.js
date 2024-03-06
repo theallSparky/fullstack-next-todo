@@ -1,3 +1,5 @@
+"use client";
+
 import Todo from "@/components/Todo";
 import { useState } from "react";
 
