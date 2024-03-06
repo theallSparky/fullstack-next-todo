@@ -1,6 +1,12 @@
 import Todo from "@/components/Todo";
+import { useState } from "react";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    title: "",
+    description: "",
+  });
+
   return (
     <>
       <form className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto">
@@ -42,6 +48,8 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
+            <Todo></Todo>
+            <Todo></Todo>
             <Todo></Todo>
           </tbody>
         </table>
