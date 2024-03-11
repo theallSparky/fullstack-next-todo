@@ -9,7 +9,11 @@ export default function Home() {
     description: "",
   });
 
-  const onChangeHandler = (e) => {};
+  const onChangeHandler = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setFormData((form) => ({ ...form, [name]: value }));
+  };
 
   return (
     <>
