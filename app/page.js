@@ -18,6 +18,9 @@ export default function Home() {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+    try {
+      // api code
+    } catch (error) {}
   };
 
   return (
