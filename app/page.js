@@ -13,18 +13,30 @@ export default function Home() {
     const name = e.target.name;
     const value = e.target.value;
     setFormData((form) => ({ ...form, [name]: value }));
+    console.log(formData);
+  };
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
   };
 
   return (
     <>
-      <form className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto">
+      <form
+        onSubmit={onSubmitHandler}
+        className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto"
+      >
         <input
+          onChange={onChangeHandler}
+          value={formData.title}
           type="text"
           name="title"
           placeholder="Enter Title"
           className="px-3 py-2 border-2 w-full"
         />
         <textarea
+          onChange={onChangeHandler}
+          value={formData.description}
           name="description"
           placeholder="Enter Description"
           className="px-3 py-2 border-2 w-full"
