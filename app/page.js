@@ -22,12 +22,13 @@ export default function Home() {
     e.preventDefault();
     try {
       // api code
+      toast.success("Success");
     } catch (error) {}
   };
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer theme="dark" closeOnClick autoClose="3500" />
       <form
         onSubmit={onSubmitHandler}
         className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto"
