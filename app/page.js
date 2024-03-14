@@ -23,7 +23,9 @@ export default function Home() {
     try {
       // api code
       toast.success("Success");
-    } catch (error) {}
+    } catch (error) {
+      toast.error("Error!");
+    }
   };
 
   return (
