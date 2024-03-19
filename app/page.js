@@ -40,6 +40,7 @@ export default function Home() {
         title: "",
         description: "",
       });
+      await fetchTodos();
     } catch (error) {
       toast.error("Error!");
     }
