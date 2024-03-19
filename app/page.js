@@ -12,6 +12,17 @@ export default function Home() {
     description: "",
   });
 
+  useEffect(() => {
+    fetchTodos();
+  }, []);
+
+  const [todoData, setTodoData] = useState([]);
+
+  const fetchTodos = async () => {
+    const response = await axios("/api");
+    setTodoData(response.data.todos);
+  };
+
   const onChangeHandler = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -25,6 +36,10 @@ export default function Home() {
       // api code
       const response = await axios.post("/api", formData);
       toast.success(response.data.msg);
+      setFormData({
+        title: "",
+        description: "",
+      });
     } catch (error) {
       toast.error("Error!");
     }
