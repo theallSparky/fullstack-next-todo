@@ -29,12 +29,16 @@ const Todo = ({
         >
           Delete
         </button>
-        <button
-          onClick={() => completeTodo(mongoId)}
-          className="py-2 px-4 bg-green-500 text-black"
-        >
-          Done
-        </button>
+        {complete ? (
+          ""
+        ) : (
+          <button
+            onClick={() => completeTodo(mongoId)}
+            className="py-2 px-4 bg-green-500 text-black"
+          >
+            Done
+          </button>
+        )}
       </td>
     </tr>
   );
