@@ -23,6 +23,16 @@ export default function Home() {
     setTodoData(response.data.todos);
   };
 
+  const deleteTodo = async (id) => {
+    const response = await axios.delete("/api", {
+      params: {
+        mongoId: id,
+      },
+    });
+    toast.success(response.data.msg);
+    await fetchTodos();
+  };
+
   const onChangeHandler = (e) => {
     const name = e.target.name;
     const value = e.target.value;
