@@ -94,9 +94,18 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            <Todo></Todo>
-            <Todo></Todo>
-            <Todo></Todo>
+            {todoData.map((item, index) => {
+              return (
+                <Todo
+                  key={index}
+                  id={index}
+                  title={item.title}
+                  description={item.description}
+                  complete={item.isCompleted}
+                  mongoId={item._id}
+                />
+              );
+            })}
           </tbody>
         </table>
       </div>
