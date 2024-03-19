@@ -30,7 +30,7 @@ export default function Home() {
       },
     });
     toast.success(response.data.msg);
-    await fetchTodos();
+    fetchTodos();
   };
 
   const onChangeHandler = (e) => {
@@ -114,6 +114,7 @@ export default function Home() {
                   description={item.description}
                   complete={item.isCompleted}
                   mongoId={item._id}
+                  deleteTodo={deleteTodo}
                 />
               );
             })}
