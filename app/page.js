@@ -51,7 +51,6 @@ export default function Home() {
     const name = e.target.name;
     const value = e.target.value;
     setFormData((form) => ({ ...form, [name]: value }));
-    console.log(formData);
   };
 
   const onSubmitHandler = async (e) => {
