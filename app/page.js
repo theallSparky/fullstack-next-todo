@@ -5,6 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ParticlesComponent from "../components/particles.js";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -72,6 +73,8 @@ export default function Home() {
   return (
     <>
       <ToastContainer theme="dark" closeOnClick autoClose="3500" />
+      <ParticlesComponent id="particles" />
+
       <form
         onSubmit={onSubmitHandler}
         className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-24 px-2 mx-auto"
