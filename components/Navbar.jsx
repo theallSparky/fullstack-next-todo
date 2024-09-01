@@ -249,8 +249,4 @@ const LINKS = [
     text: "About",
     href: "#",
   },
-  {
-    text: "Contact",
-    href: "#",
-  },
 ];
