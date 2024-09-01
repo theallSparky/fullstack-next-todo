@@ -1,5 +1,5 @@
 "use client";
-
+// ITS ALWAYS GOOD TO HAVE YOUR CLIENT SIDE CODE RENDERED FROM YOU COMPONENTS FOLDER SO ILL CHANGE THIS FOR YOU SOON :)
 import Todo from "@/components/Todo";
 import axios from "axios";
 import { useEffect, useState } from "react";
